@@ -27,7 +27,7 @@ hg.controller('gridController', function($scope, $attrs, $element) {
     return {
       dataSource: {
           data: source,
-          pagesize: 15,
+          pageSize: 15,
           batch: true,
           schema: {
               model: {
@@ -40,6 +40,7 @@ hg.controller('gridController', function($scope, $attrs, $element) {
           }
       },
       pageable: true,
+      resizable: true,
       scrollable: true,
       sortable: true,
       columns: columns,
